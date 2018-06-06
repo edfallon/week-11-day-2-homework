@@ -19,12 +19,25 @@ Park.prototype.removeByType = function (type) {
     }
 }
 
+Park.prototype.moreThan2 = function() {
+  for(var i = this.enclosure.length - 1; i >= 0; i--) {
+    if(dinosaur[i].offspring > 2) {
+       return dinosaur;
+    }
+}
+
 };
 
 
 
 
 module.exports = Park;
+
+// for(dinosaur in this.enclosure){
+//   if (dinosaur.offspring > 2) {
+//     return dinosaur;
+//   }
+// }
 
 
 // for(dinosaur ; this.enclosure){
